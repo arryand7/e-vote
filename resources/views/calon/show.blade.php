@@ -14,11 +14,12 @@
             <div class="text-center container-fluid mb-3">
                 <h3>{{ $calon->nama_calon }}</h3>
 
-                @if ($calon->foto)
+                <img src="{{ asset('img/' . $calon->username . '.jpg') }}" alt="kandidat" width="200">
+                <!-- @if ($calon->foto)
                 <img src="{{ asset('storage/' . $calon->foto) }}" alt="kandidat" width="200">
                 @else
                 <img src="/img/kandidat.jpg" alt="kandidat" width="200">
-                @endif
+                @endif -->
 
                 <p>{!! $calon->keterangan !!}</p>
                 <a href="/dashboard/calon" class="btn btn-danger">Kembali</a>

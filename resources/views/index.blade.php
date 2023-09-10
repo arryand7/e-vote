@@ -100,12 +100,13 @@
                             <div class="card-body">
                                 <div class="text-center">
 
-                                    @if ($calon->foto)
+                                    <img src="{{ asset('img/' . $calon->username . '.jpg') }}" alt="kandidat" width="200" height="200">
+                                    <!-- @if ($calon->foto)
                                     <img src="{{ asset('storage/' . $calon->foto) }}" width="89" height="89" alt=""
                                         class="img-customer">
                                     @else
                                     <img src="/img/kandidat.jpg" width="89" height="89" alt="" class="img-customer">
-                                    @endif
+                                    @endif -->
 
                                     <p class="m-0 py-3 text-muted">{{ $calon->keterangan }}</p>
                                     <div class="content-divider m-auto"></div>
