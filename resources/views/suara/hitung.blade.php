@@ -29,11 +29,12 @@
                             <td>{{ $count['nama_calon'] }}</td>
                             <td>
 
-                                @if ($count['foto'])
-                                <img src="{{ asset('storage/' . $count['foto']) }}" width="80" alt="kandidat">
+                                <img src="{{ asset('img/' . $count['username']) . '.jpg'}}" width="80" alt="kandidat">
+                                <!-- @if ($count['username'])
+                                <img src="{{ asset('storage/' . $count['username']) }}" width="80" alt="kandidat">
                                 @else
                                 <img src="/img/kandidat.jpg" width="80" alt="kandidat">
-                                @endif
+                                @endif -->
 
                             </td>
                             <td>{{ $count['hitung'] }} Suara</td>

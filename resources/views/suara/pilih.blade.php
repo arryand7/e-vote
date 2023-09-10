@@ -24,12 +24,13 @@
                             <td class="text-center">
                                 <h2>{{ $calon->id }}</h2>
 
-                                @if ($calon->foto)
+                                <img src="{{ asset('img/' . $calon->username) . 'jpg' }}" width="300" class="img-fluid mb-3" alt="kandidat">
+                                <!-- @if ($calon->foto)
                                 <img src="{{ asset('storage/' . $calon->foto) }}" width="300" class="img-fluid mb-3"
                                     alt="kandidat">
                                 @else
                                 <img src="/img/kandidat.jpg" width="300" class="img-fluid" alt="kandidat">
-                                @endif
+                                @endif -->
 
                                 <h3>{{ $calon->nama_calon }}</h3>
                             </td>

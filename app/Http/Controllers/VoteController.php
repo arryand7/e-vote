@@ -65,7 +65,7 @@ class VoteController extends Controller
             $hitung = $vote->where('id_calon', $calon->id)->count();
 
             $total['nama_calon'] = $calon->nama_calon;
-            $total['foto'] = $calon->foto;
+            $total['username'] = $calon->username;
             $total['hitung'] = $hitung;
             array_push($hasil, $total);
         }
