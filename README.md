@@ -2,7 +2,7 @@
 
 # Clone or Download this repository
 
-Don't be stupid for clone github repository
+Just Clone
 
 # Run
 
